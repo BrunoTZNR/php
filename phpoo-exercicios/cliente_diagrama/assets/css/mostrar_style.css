@@ -1,0 +1,74 @@
+section.container form.cadastrar{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+}
+
+section.container form.cadastros{
+    display: flex;
+    justify-content: center;
+}
+
+section.container table{
+    width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+thead tr, thead td{
+    border: 1px solid #6d6d6d;
+}
+
+tbody tr, tbody td{
+    border: 1px solid #c9c9c9;
+}
+
+section.container table tr td{
+    padding: .3rem .8rem;
+}
+
+section.container table thead tr td{
+    background: #858585;
+    color: #fff;
+    font-weight: bold;
+}
+
+td.nada{
+    text-align: center;
+    font-weight: bold;
+}
+
+section.container table tbody tr:nth-child(even){
+    background: #dfdfdf;
+}
+
+input.search_input,
+input.search_submit{
+    border: none;
+    outline: none;
+    padding: .4rem .6rem;
+    border: 1px solid #c9c9c9;
+}
+
+input.search_input{
+    width: 200px;
+    margin-right: 1rem;
+}
+
+input.search_input::placeholder{
+    color: #6d6d6d;
+}
+
+input.search_input:focus{
+    border-color: #6d6d6d;
+}
+
+input.search_submit{
+    cursor: pointer;
+}
+
+input.search_submit:hover{
+    background: #6d6d6d;
+    border-color: #6d6d6d;
+    color: #fff;
+}

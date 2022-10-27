@@ -1,0 +1,72 @@
+section.main_container{
+    width: 100%;
+    padding: 4rem 2rem 0;
+}
+
+form{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+form h3{
+    color: var(--color-texto);
+    width: 100%;
+    background: var(--color-back);
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* cliente */
+div.cliente_container{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+div.cliente_container button{
+    border: none;
+    width: 25px;
+}
+
+div.cliente_container i{
+    color: var(--color-back);
+    cursor: pointer;
+}
+
+div.procurar_cliente{
+    /* position: absolute; */
+    top: 25px;
+    padding: .7rem;
+    background: var(--color-back2);
+}
+
+input,
+select{
+    padding: 5px 3px;
+    border: 1px solid var(--color-back2);
+    border-radius: 7px;
+    outline: none;
+}
+
+input[name="nm_cliente"]{
+    width: 200px;
+}
+
+input[name="ddd"]{
+    width: 37px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[name="telefone"]{
+    width: 80px;
+}

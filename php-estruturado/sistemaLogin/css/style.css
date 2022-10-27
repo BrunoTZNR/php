@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #eeeeee;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding: 40px 20px 20px;
+    background-color: #fff;
+    border-radius: 1.95rem;
+    box-shadow: 0 0 25px #bebebe;
+}
+
+h1{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    font-weight: 900;
+}
+
+input{
+    width: 95%;
+    height: 60px;
+    border-radius: .35rem;
+    border: 1px solid #ccc;
+    margin-bottom: .95rem;
+    margin-left: 1.1rem;
+    padding-left: 18%;
+}
+
+input:focus{
+    outline-color: #00c3ff;
+}
+
+.btn-blue{
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    cursor: pointer;
+    background: #00c3ff;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: .35rem;
+    transition: background .5s ease;
+}
+
+.btn-blue:hover{
+    background: #038bb4;
+}
+
+a{
+    text-decoration: none;
+    margin-top: 10px 0 20px 0;
+    color: #000;
+}
+
+a:hover{
+    color: #00c3ff;
+}
+
+.link{
+    color: #00c3ff;
+    text-decoration: underline;
+}
+
+input[type='checkbox']{
+    display: inline-block;
+    height: 20px;
+    width: 5%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+label{
+    display: inline-block;
+    width: 85%;
+    font-size: .85rem;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.input-group{
+    width: 90%;
+}
+
+.input-icon{
+    width: 60px;
+    position: absolute;
+}
+
+.erro-geral{
+    background: #c82a2a;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: .35rem;
+    margin-bottom: .9rem;
+    transition: opacity .25s ease;
+}
+
+.sucesso{
+    background: #0fc746;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: .35rem;
+    margin-bottom: .9rem;
+    transition: opacity .25s ease;
+}
+
+.erro-input{
+    border: 1px solid #c82a2a;
+}
+
+.erro{
+    color: #c82a2a;
+    text-align: center;
+    margin-bottom: .7rem;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.oculto{
+    display: none;
+}
+
+.obrigado p{
+    text-align: center;
+    padding: 2rem;
+}

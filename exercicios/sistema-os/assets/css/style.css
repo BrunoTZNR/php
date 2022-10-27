@@ -1,0 +1,194 @@
+/* variaveis */
+:root{
+    --teste: #fffffa;
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* main */
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background: url('../images/bg-login.png') no-repeat;
+    background-position-y: -28px;
+}
+
+/* main - section left */
+.container-left{
+    display: block;
+    width: 40vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container-left p{
+    position: absolute;
+    z-index: 6;
+    background-color: green;
+    color: white;
+}
+
+/* main - section right */
+.container-right{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-formulario form{
+    width: 400px;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #808080;
+}
+
+.container-formulario form h1{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container-formulario form label{
+    color: #cccccc;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.container-formulario form label.label_nome{
+    transition: .2s ease-in;
+}
+.container-formulario form label.label_senha,
+.container-formulario form label.label_repetir_senha,
+.container-formulario form label.label_sobrenome,
+.container-formulario form label.label_email{
+    margin-top: .8rem;
+    transition: .2s ease-in;
+}
+
+.container-formulario form input[type="text"],
+.container-formulario form input[type="email"],
+.container-formulario form input[type="password"]{
+    width: 100%;
+    height: 35px;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding-left: .7rem;
+    font-size: 1rem;
+}
+
+.container-formulario form input[type="text"]:focus,
+.container-formulario form input[type="email"]:focus,
+.container-formulario form input[type="password"]:focus{
+    outline: 2px solid #585858;
+}
+
+.container-formulario form p{
+    display: flex;
+    justify-content: end;
+    margin-top: .2rem;
+}
+
+.container-formulario form p a.recupera_senha{
+    font-size: .95rem;
+    color: #585858;
+    font-weight: 600;
+    transition: .1s;
+}
+
+.container-formulario form p a.recupera_senha:hover{
+    color: #303030;
+}
+
+.container-formulario form div{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.container-formulario form div p{
+    display: flex;
+    align-items: center;
+}
+
+.container-formulario form div p a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: .1s;
+}
+
+.container-formulario form div p a:hover{
+    color: #b8b8b8;
+}
+
+.container-formulario form div input[type="submit"],
+.container-formulario form input[type="submit"].cadastrar{
+    width: 110px;
+    height: 35px;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #808080;
+    transition: .25s ease-in-out;
+}
+
+.container-formulario form input[type="submit"].cadastrar{
+    margin: 1.5rem auto 0;
+}
+
+.container-formulario form div input[type="submit"]:hover,
+.container-formulario form input[type="submit"].cadastrar:hover{
+    background-color: #303030;
+    color: #fff;
+}
+
+.container-formulario form p.termos{
+    color: #b8b8b8;
+    line-height: 17px;
+    display: inline-block;
+    padding: 15px 10px 0;
+}
+
+.container-formulario form p.termos a{
+    color: #585858;
+    text-decoration: underline;
+}
+
+.container-formulario form p.termos a:hover{
+    color: #303030;
+}
+
+@media only screen and (max-width: 875px){
+    .container-left{
+        display: none;
+    }
+    .container-right{
+        width: 100vw;
+    }
+}

@@ -1,0 +1,12 @@
+# wampp
+wamplangues/*
+wampthemes/*
+*.ico
+*.rar
+add_vhost.php
+index.php
+test_sockets.php
+testmysql.php
+
+# projetos privados
+FINP/*

@@ -1,0 +1,44 @@
+main{
+    width: 100%;
+}
+
+section.main_container{
+    width: 100%;
+    padding: 4rem 2rem 0;
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+    text-align: center;
+}
+
+table thead{
+    background: var(--color-back);
+    color: var(--color-texto);
+    border: 1px solid var(--color-back);
+}
+
+tr,
+td{
+    padding: 5px 5px;
+}
+
+tbody{
+    border: 1px solid var(--color-back2);
+}
+
+tr:nth-child(even){
+    background-color: var(--color-back3);
+}
+
+tbody tr td a{
+    display: block;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+tbody tr td a:hover{
+    color: var(--color-back);
+}
